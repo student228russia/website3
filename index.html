@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>патриот</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id="название">
+            <img id="logo" src="logo.jpg" alt="Логотип">
+            <h2>Патриот</h2>
+        </div>
+    </header>
+    <nav><a href="#spisok">Список ссылок</a> <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+    </nav>
+    <div id="spisok">
+        <h3>Список ссылок:</h3>
+        <ol>
+            <li><a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a>
+            </li>
+            <li><a href="https://example.com/">Абсолютная на главную сайта example.com в протоколе https</a>
+            </li>
+            <li><a href="ftp://student@example.ru/file.txt">Ссылка на файл на сервере FTP без
+                    авторизации</a>
+            </li>
+            <li><a href="ftp://example.ru/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+            <li><a href="https://www.gismeteo.ru/weather-krasnodar-5136/#foto">Ссылка на фрагмент страницы
+                    некоторого
+                    сайта</a></li>
+            <li><a href="#form">Форма (ссылка на фрагмент текущей страницы)</a></li>
+            <li><a href="https://www.onlinestor.com?product=socks&color=black&size=m">Ссылка с двумя параметрами
+                    в
+                    URL</a></li>
+            <li>Cписок ссылок основной навигации сайта с подписями title:<br>
+                <a href="https://infoneeds.kubsu.ru/infoneeds/guests/selectspeciality.jsp?fid=8&year=2021"
+                    title="Образовательные программы ФПМ 2021">сайт №1</a><br>
+                <a href="https://infoneeds.kubsu.ru/infoneeds/guests/selectspeciality.jsp?fid=8&year=2022"
+                    title="Образовательные программы ФПМ 2022">сайт №2</a>
+            <li><a title="http://example.com/">Ссылка без href</a></li>
+            <li><a href=" ">Ссылка с пустым href</a></li>
+            <li><a href="http://www.site.ru" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+            </li>
+            <li><a href="http://www.site.ru" content="noindex">Запрещенная для индексации поисковиками</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BF%D0%B5%D1%80%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0"
+                    title="Гиперссылка">Гиперссылка</a> &#160; - это элемент веб-страницы, при нажатии на
+                который
+                происходит переход на другой адрес, который может располагаться как на том же самом сайте
+                («внутренняя
+                гиперссылка»), так и на другом («внешняя гиперссылка»).</li>
+            <li><a href="http://myflo.ru/catalog/gazania/gazania-posadka-i-uhod"><img src="image1.jpg" width="224"
+                        height="168" alt="Цветок"></a> </li>
+            <li>
+            <img src="image2.jpg" width="332" height="245" usemap="#map" alt="Карта">
+            <map name="map">
+                <area shape="rect" coords="20,150,100,170"
+                    href="https://ru.wikipedia.org/wiki/%D0%9F%D1%83%D1%82%D0%B8%D0%BD,_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B8%D1%87" alt="Путин">
+                <area shape="rect" coords="180,120,240,140"
+                    href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B5%D0%BC%D0%BB%D1%8C2" alt="Кремль">
+                <area shape="circle" coords="165,220,40"
+                    href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%82%D1%80%D0%B8%D0%BE%D1%82%D0%B8%D0%B7%D0%BC" alt="патриот">
+            </map></li>
+            <li><a href="index.html">Относительная на страницу в текущем каталоге</a></li>
+            <li><a href="/about/">Относительная на страницу в каталоге about</a></li>
+            <li><a href="./index.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../index.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href="/index.html">Сокращенная на главную</a></li>
+            <li><a href="/about/form.html">Сокращенная ссылку на внутреннюю</a></li>
+        </ol>
+    </div>
+    <div id="table">
+        <table>
+            <caption>
+                <h3>Таблица</h3>
+            </caption>
+            <tr>
+                <th>Имя</th>
+                <th>Электронная почта</th>
+                <th>День рождения</th>
+            </tr>
+            <tr>
+                <td colspan="3">Контракт</td>
+            </tr>
+            <tr>
+                <td>Ячейка</td>
+                <td>Ячейка</td>
+                <td>Ячейка</td>
+            </tr>
+            <tr>
+                <td colspan="3">Завод</td>
+            </tr>
+            <tr>
+                <td>Ячейка</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Алкоголь</td>
+            </tr>
+            <tr>
+                <td>Ячейка</td>
+                <td>Ячейка2</td>
+                <td>Ячейка3</td>
+            </tr>
+        </table>
+    </div>
+    <div id="form">
+        <h3>Форма</h3>
+        <form action="/" method="POST">
+            <label>
+                Введите имя:<br>
+                <input name="field-name-1" value="Введите имя">
+            </label><br>
+            <label>
+                Адрес электронной почты:<br>
+                <input name="field-email" type="email" placeholder="Введите email">
+            </label><br>
+            <label>
+                Дата рождения:<br>
+                <input name="field-date" value="2022-09-12" type="date">
+            </label><br>
+            Выберите пол:<br>
+            <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                Женский</label>
+            <label><input type="radio" name="radio-group-1" value="Значение2">
+                Мужской</label><br>
+            Количество конечностей:<br>
+            <label><input type="radio" checked="checked" name="radio-group-2" value="Значение1">
+                1</label>
+            <label><input type="radio" name="radio-group-2" value="Значение2">
+                2</label>
+            <label><input type="radio" name="radio-group-2" value="Значение3">
+                3</label>
+            <label><input type="radio" name="radio-group-2" value="Значение4">
+                4</label><br>
+            <label>
+                Контрактник:<br>
+                <select name="field-name-4[]" multiple="multiple">
+                    <option value="Значение1">Контракт</option>
+                    <option value="Значение2" selected="selected">Завод</option>
+                    <option value="Значение3" selected="selected">Алкоголь</option>
+                </select>
+            </label><br>
+            Биография:<br>
+            <textarea name="field-name-2">Напишите о себе</textarea>
+            <br><label><input type="checkbox" checked="checked" name="check-1">
+                с контрактом ознакомлен(а)</label><br>
+            Кнопка отправки формы:
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+    <footer>
+        Бойко Евгений
+    </footer>
+</body>
+
+</html>

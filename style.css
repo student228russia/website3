@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+div,
+nav {
+    background-color: rgb(246, 167, 178);
+    border: 5px solid white;
+    font-family: "Times New Roman", monotype;
+    font-weight: 200;
+    font-style: normal;
+    text-align: left;
+    padding: 4px;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+#название {
+    background-color: rgb(255, 68, 74);
+    border: none;
+    height: 140px;
+    text-align: left;
+}
+
+#logo {
+    float: left;
+    height: 100px;
+    margin: 10px;
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-style: oblique;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid rgb(86, 86, 86);
+    text-align: center;
+    width: 300px;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    width: auto;
+}
+
+tr:nth-child(2n) {
+    background: rgb(192, 190, 190);
+}
+
+#form {
+    flex-direction: column;
+    order: 2;
+}
+
+#table {
+    order: 3;
+}
+
+footer {
+    background-color: rgb(98, 177, 177);
+    order: 4;
+    text-align: left;
+    font-style: oblique;
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    #название {
+        margin: 0 auto;
+    }
+    div,
+    nav {
+        margin: 0 auto ;
+        padding: 4px;
+        width: 960px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #form {
+        order: 3;
+    }
+
+    #table {
+        order: 2;
+    }
+
+    footer {
+        order: 4;
+    }
+
+}
